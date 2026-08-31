@@ -2,3 +2,6 @@ pandas
 numpy
 streamlit
 plotly
+fastapi
+uvicorn[standard]
+pydantic
