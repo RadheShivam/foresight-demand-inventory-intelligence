@@ -759,3 +759,19 @@ Mean rolling LightGBM bias: -0.71%
 ```
 
 The project is ready to proceed to D4.
+
+
+
+
+# D4 — Inventory Risk Scoring
+
+D4 combines the 13-week LightGBM forecast with the latest available
+inventory position for every SKU.
+
+## Risk Logic
+
+### Stockout Risk
+Forecast demand during lead time is compared with:
+
+```text
+on_hand_units + on_order_units
